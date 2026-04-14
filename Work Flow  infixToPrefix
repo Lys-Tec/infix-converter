@@ -1,4 +1,5 @@
 function infixToPrefix(expression):
+
     reverse expression
     swap '(' with ')' and vice versa
 
