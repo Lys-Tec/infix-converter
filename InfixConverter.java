@@ -1,3 +1,15 @@
+/**
+@author chibozyihoughton
+
+INFIX TO PREFIX AND POSTFIX ASSIGNMENT
+     NAME: HOUGHTON CHIBOZYI
+     STUDENT NUMBER: 202301165
+     COURSE CODE: ICT 202
+     LECTURER: KALUBA ZILANI(Mr)
+
+     
+*/
+
 import java.util.Stack;
 
 public class InfixConverter {
