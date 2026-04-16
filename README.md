@@ -1,0 +1,10 @@
+function infixToPrefix(expression):
+
+    reverse expression
+    swap '(' with ')' and vice versa
+
+    postfix = infixToPostfix(modified expression)
+
+    prefix = reverse(postfix)
+
+    return prefix
