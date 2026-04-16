@@ -8,3 +8,27 @@ function infixToPrefix(expression):
     prefix = reverse(postfix)
 
     return prefix
+
+
+function infixToPostfix(expression):
+    create empty stack for operators
+    create empty string result
+
+    for each character c in expression:
+        if c is operand:
+            append c to result
+        else if c is '(':
+            push c to stack
+        else if c is ')':
+            while stack not empty and top != '(':
+                append pop(stack) to result
+            pop '(' from stack
+        else if c is operator:
+            while stack not empty and precedence(top) >= precedence(c):
+                append pop(stack) to result
+            push c to stack
+
+    while stack not empty:
+        append pop(stack) to result
+
+    return result
